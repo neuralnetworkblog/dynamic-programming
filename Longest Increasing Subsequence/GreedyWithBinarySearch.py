@@ -8,7 +8,7 @@ class Solution:
         if n == 0 or n == 1:
             return a
         trace = {0: -1}
-        l = [0] # l[i] = j : a[i] là phần tử nhỏ nhất trong các phần tử cuối cùng của dãy có độ dài i
+        l = [0] # l[i] = j : a[j] là phần tử nhỏ nhất trong các phần tử cuối cùng của dãy có độ dài i
         d = 0 # độ dài lớn nhất của dãy kết quả
         for i in range(1, n):
             if a[i] <= a[l[0]]:
